@@ -5,6 +5,8 @@
 //== Theme colors
 @dark-color: #272a32;
 @darker-color: #111;
+@macmail-blue: #4788ff;
+@macmail-darkblue: #0069d9;
 
 //== Toolbar
 @toolbar-background-color: darken(@white, 17.5%);
@@ -49,8 +51,8 @@
 
 //=============================== Colors ===============================//
 
-@accent-primary:      @blue;
-@accent-primary-dark: @dark-color;
+@accent-primary:      @macmail-blue;
+@accent-primary-dark: @macmail-darkblue;
 
 @background-primary:     @white;
 @background-off-primary: #fdfdfd;
@@ -82,19 +84,28 @@ rgba(253,253,253,0.75) 100%);
 
 @text-color-heading: #434648;
 
-@text-color-link:        @blue;
-@text-color-link-hover:  @blue-dark;
-@text-color-link-active: @blue-dark;
+@text-color-link:        @macmail-blue;
+@text-color-link-hover:  @macmail-darkblue;
+@text-color-link-active: @macmail-darkblue;
 
 //== Custom ==//
 
-.nylas-outline-view .item {
+.nylas-outline-view {
+  .item {
 
-  &.selected {
-    color: @blue-dark;
+    &.selected {
+      color: @blue-dark;
 
-    img.content-mask {
-      background-color: @blue-dark;
+      img.content-mask {
+        background-color: @blue-dark;
+      }
     }
+  }
+
+  .item-count-box.alt-count {
+    background-color: #5e5e63 !important;
+    border-radius: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
   }
 }
