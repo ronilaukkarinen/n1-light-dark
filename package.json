@@ -1,0 +1,13 @@
+{
+  "name": "n1-light-dark",
+  "title": "",
+  "displayName": "Light & Dark",
+  "theme": "ui",
+  "version": "0.1.0",
+  "description": "",
+  "license": "GPL-3.0",
+  "engines": {
+    "nylas": "*"
+  },
+  "private": true
+}
