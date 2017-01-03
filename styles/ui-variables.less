@@ -91,10 +91,25 @@ rgba(253,253,253,0.75) 100%);
 //== Custom ==//
 
 .nylas-outline-view {
+  .heading {
+    color: #fff;
+  }
+
+  .disclosure-triangle div {
+    border-left-color: #fff;
+  }
+
   .item {
+    color: #fff;
+    background-color: transparent;
+
+    img.content-mask {
+      background-color: #fff;
+    }
 
     &.selected {
       color: @blue-dark;
+      background-color: transparent;
 
       img.content-mask {
         background-color: @blue-dark;
@@ -108,4 +123,9 @@ rgba(253,253,253,0.75) 100%);
     padding-left: 6px;
     padding-right: 6px;
   }
+}
+
+.account-sidebar {
+  border: 0;
+  background: #273144;
 }
